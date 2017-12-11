@@ -1,0 +1,152 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto|Sansita|Open+Sans');
+
+*{
+	padding: 0px;
+	margin: 0px;
+}
+
+.contentImg{
+	position: absolute;
+	left: -40px;
+	background-image: url('../img/banner-bienvenidos0.jpg');	
+	background-repeat: no-repeat;
+	width: 103.3%;
+	height: 100%;
+}
+
+.header{
+ 	border-bottom: solid 1px rgba(0,0,0,0.05);
+	height: 54px;
+ 	margin-left: 2em;
+ 	overflow: hidden;
+	width: 90%;
+	position: fixed;
+	 z-index: 100;
+}
+.header p{
+	position: absolute;
+	top: 14px;
+	right: 0;
+	color: #fff;
+	font-size: 18px;
+	font-weight: 700;
+	font-family: "Sansita";
+	border-bottom: 2px solid;
+	text-shadow: 1px 0 2px #444;
+}
+
+.header .nav .menu{
+    margin-right: 1em;
+    margin-top: 1em;
+
+}
+.header .nav .menu .items {
+	float: left;
+    list-style: none;
+}
+
+.header .nav .menu .items  a{
+	color: #fff;
+	font-size: 13px;
+    font-weight: bold;
+    letter-spacing: .08181818182em;
+    line-height: 1.818;
+    opacity: 1;
+    padding: 0 13px;
+    margin-bottom: 13px;
+	text-decoration: none;
+    font-family:  "Roboto";
+    text-shadow: 1px 0 1px #444;
+    transition: ease-all 6s;
+}
+
+.header .nav .menu .items  a:hover{
+	color: #ccc;
+	font-size: 15px;
+}
+
+.logo{
+	position: absolute;
+	left: 30px;
+	top: 55px;
+}
+.logo img{
+	width: 100%;
+
+}
+.isos{
+	position: absolute;
+	right: 95px;
+	top: 55px;
+	margin-top: 10px;
+	border-radius: 40px 40px;
+}
+ 
+.isos img{
+	border-radius: 40px 40px;
+	border: 3px solid #FF5722;
+	height: 120px;
+	width: 120px;
+	box-shadow: 1px 0 1px #ccc;
+	transition-duration: 5s;
+}
+.isos  img:hover  {
+    -webkit-animation:spin 5s linear infinite;
+    -moz-animation:spin 5s linear infinite;
+    animation:spin 5s linear infinite;
+}
+ @-moz-keyframes spin { 100% { -moz-transform: rotate(360deg); } }
+ @-webkit-keyframes spin { 100% { -webkit-transform: rotate(360deg); } }
+ @keyframes spin { 100% { -webkit-transform: rotate(360deg); transform:rotate(360deg); } }
+
+
+#Nosotros{
+	position: absolute;
+	top: 690px;
+	height: 690px;
+	width: 100%;
+}
+
+#Nosotros h2{
+	margin-top: 2em;
+	font-family: Roboto;
+	text-align: center;
+}
+ 
+ #tabs-nosotros{
+ 	margin: auto;
+ 	margin-top: 3em;
+ 	width: 90%;
+ }
+ .tab-pane p{
+ 	text-align: justify;
+ }
+.contenido-somos-img img{
+	margin-top: 4em;
+	width: 100%;
+}
+  
+#Servicios{
+	position: absolute;
+	top: 1390px;
+	height: 690px;
+	width: 100%;
+}
+ 
+ #Servicios h2{
+ 	margin-top: 2em;
+	font-family: Roboto;
+	text-align: center;
+ }
+#Contactenos{
+	position: absolute;
+	top: 2090px;
+	height: 690px;
+	width: 100%;
+}
+
+ #Contactenos h2{
+ 	margin-top: 2em;
+	font-family: Roboto;
+	text-align: center;
+ }
