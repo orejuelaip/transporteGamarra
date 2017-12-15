@@ -22,6 +22,7 @@
 	width: 90%;
 	position: fixed;
 	 z-index: 100;
+	 transition-duration: 2s;
 }
 .header p{
 	position: absolute;
