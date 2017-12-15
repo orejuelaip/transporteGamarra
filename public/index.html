@@ -8,23 +8,31 @@
 	<meta name="keywords" content="agencia de transportes, transportes, camiones de carga, carga seca, carga refrigerada, venta de repuestos, carga paletizada, monitoreo satelital">
 	<meta name="author" content="Paul Orejuela">
 	<title>Bienvenido a Transportes Gamarra</title>
-	<link rel="stylesheet" type="text/css" href="css/gamarra.css">
+	<link rel="stylesheet" type="text/css" href="css/gamarra3.css">
 	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js" type="text/javascript"></script>
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
 
 </head>
 <body>
-	<div class="contentImg">
+	<div id="Inicio" class="contentImg">
 		
 	</div>
-	<div class="header">
+	<div id="content-nav" class="header">
 		<div class="nav">
 			<ul class="menu">
-				<li class="items"> <a  href="/">Inicio</a> </li>
-				<li class="items"> <a class="link_he" href="#Nosotros">Nosotros</a> </li>
-				<li class="items"> <a class="link_he" href="#Servicios">Servicios</a> </li>
-				<li class="items"> <a class="link_he" href="#Contactenos">Contactenos</a> </li>
+				<li class="items"> 
+					<a id="_Inicio" class="link_he" href="#Inicio">Inicio</a> 
+				</li>
+				<li class="items"> 
+					<a id="_Nosotros" class="link_he" href="#Nosotros">Nosotros</a> 
+				</li>
+				<li class="items"> 
+					<a id="_Servicios" class="link_he" href="#Servicios">Servicios</a> 
+				</li>
+				<li class="items"> 
+					<a id="_Contactenos" class="link_he" href="#Contactenos">Contactenos</a> 
+				</li>
 			</ul>
 		</div>
 		<p>
@@ -40,7 +48,7 @@
 		</a>
 	</div>
 	<div id="Nosotros" class="container">
-		<h2>Sobre Nosotros</h2>
+		<h2 class="_titulos">Sobre Nosotros</h2>
 		<div class="row">
 			<div class="col-lg-4"></div>
 			<div id="tabs-nosotros"  >
@@ -137,11 +145,39 @@
 		</div>
 	</div>
 	<div id="Servicios" class="container">
-		<h2>Servicios</h2>
+		<h2 class="_titulos">Servicios</h2>
+		<div class="divCabImg">
+				<ul>
+					<li  class="cabpm"> <a id="pm1" href="#">MERCANCIAS PELIGROSAS</a></li>
+					<li  class="cabpm"> <a id="pm2" class="activoimg" href="#">CARGA SECA</a></li>
+					<li  class="cabpm"> <a id="pm3" href="#">CARGA REFRIGERADA</a></li>
+				</ul>
+			</div>
+		<article class="grandContentGal">
+			
+			<div class="pm1 contentGal">
+				 
+				<img class="img-thumbnail" src="img/sobredimencion4.jpg">
+			</div>
+			<div  class="pm2 contentGal">
+				
+				<img class="img-thumbnail" src="img/sobredimencion3.jpg">
+			</div>
+			<div  class="pm3 contentGal">
+
+				<img class="img-thumbnail" src="img/sobredimencion2.jpg">
+			</div>
+		</article>
 	</div>
 	<div id="Contactenos" class="container">
-		<h2>Contactenos</h2>
+	
+		<video autoplay="" muted="" loop="" >
+			<source src="img/brazil-day-3.mp4" type="video/mp4">
+			<source src="img/ejecutivo.jpg" type="video/jpg">
+					<!-- Actualiza tu navegador -->
+		</video>
+		
 	</div>
-	<script  src="js/gamarra.js" type="text/javascript"></script>
+	<script  src="js/gamarra1.js" type="text/javascript"></script>
 </body>
 </html>
