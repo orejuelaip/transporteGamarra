@@ -1,9 +1,9 @@
 $(document).ready(function() {
+	var imgs = 1;
  	$('html, body').stop().animate({scrollTop: $("#Inicio").offset().top}, 1000);
 	$('.menu .link_he').click(function(e){
 	 	e.preventDefault();
 	 	let id = $(this).attr("id");
-	 	console.log(id)
 	 	if ( id == "_Inicio" || id == "_Contactenos") {
 	 		 $('.menu .link_he').css({
 	 			  	color: '#fff', 
@@ -35,40 +35,32 @@ $('#myTabs a').click(function (e) {
 $(".cabpm a").click(function(e) {
 	  e.preventDefault()
 	let id = $(this).attr('id');
+	$(".cabpm a").removeClass('activoimg');
 	if (id=="pm1") {
 		
-		$(".pm1 img").animate({'left': '60px'}, 0)
-		$(".pm2 img").animate({'left': '-3900px'}, 0)
-		$(".pm3 img").animate({'left': '-39700px'}, 0)
-		$(".pm1 ").animate({'left': '60px'}, 0)
-		$(".pm2 ").animate({'left': '-3900px'}, 0)
-		$(".pm3 ").animate({'left': '-39700px'}, 0)
-		$("#pm1").addClass('activoimg')
-		$("#pm2").removeClass('activoimg')
-		$("#pm3").removeClass('activoimg')
+		$("#pm1").addClass('activoimg');
+		$("#galeryService").attr("src","img/sobredimencion4.jpg");
 	}else if (id=="pm2") {
-		$("#pm1").removeClass('activoimg')
-		$("#pm2").addClass('activoimg')
-		$("#pm3").removeClass('activoimg')
-		$(".pm1 img").animate({'left': '-3900px'}, 0)
-		$(".pm2 img").animate({'left': '60px'}, 0)
-		$(".pm3 img").animate({'left': '-39700px'}, 0)
-
-		$(".pm1 ").animate({'left': '-3900px'}, 0)
-		$(".pm2 ").animate({'left': '60px'}, 0)
-		$(".pm3 ").animate({'left': '-39700px'}, 0)
+ 		$("#galeryService").attr("src","img/sobredimencion3.jpg");
+ 		$("#pm2").addClass('activoimg');
 	}else{
-		$("#pm1").removeClass('activoimg')
-		$("#pm2").removeClass('activoimg')
-		$("#pm3").addClass('activoimg')
-		$(".pm1 img").animate({'left': '-39020px'}, 0)
-		$(".pm2 img").animate({'left': '-3900px'}, 0)
-		$(".pm3 img").animate({'left': '60px'}, 0)
-		$(".pm1 ").animate({'left': '-39020px'}, 0)
-		$(".pm2 ").animate({'left': '-3900px'}, 0)
-		$(".pm3 ").animate({'left': '60px'}, 0)
+		$("#galeryService").attr("src","img/sobredimencion2.jpg");
+		$("#pm3").addClass('activoimg');
 	}
 });
 
+	function moverImagenes() {
+		if (imgs == 1 ) {
+			imgs=2
+			$("#Inicio").css({ 'background-image': 'url(../img/banner-nuestra-flota1.jpg)'});
+		}else if (imgs == 2 ) {
+			imgs=3
+			$("#Inicio").css({ 'background-image': 'url(../img/banner-landing.jpg)'});
+		}else if (imgs == 3){
+			imgs=1
+			$("#Inicio").css({ 'background-image': 'url(../img/banner-bienvenidos0.jpg)'});
+		}
+	}
 
+	setInterval(moverImagenes, 10000);
 });

@@ -147,25 +147,15 @@
 	<div id="Servicios" class="container">
 		<h2 class="_titulos">Servicios</h2>
 		<div class="divCabImg">
-				<ul>
-					<li  class="cabpm"> <a id="pm1" href="#">MERCANCIAS PELIGROSAS</a></li>
-					<li  class="cabpm"> <a id="pm2" class="activoimg" href="#">CARGA SECA</a></li>
-					<li  class="cabpm"> <a id="pm3" href="#">CARGA REFRIGERADA</a></li>
-				</ul>
-			</div>
+			<ul>
+				<li class="cabpm"> <a id="pm1" href="#">MERCANCIAS PELIGROSAS</a></li>
+				<li class="cabpm"> <a id="pm2" class="activoimg" href="#">CARGA SECA</a></li>
+				<li class="cabpm"> <a id="pm3" href="#">CARGA REFRIGERADA</a></li>
+			</ul>
+		</div>
 		<article class="grandContentGal">
-			
-			<div class="pm1 contentGal">
-				 
-				<img class="img-thumbnail" src="img/sobredimencion4.jpg">
-			</div>
-			<div  class="pm2 contentGal">
-				
-				<img class="img-thumbnail" src="img/sobredimencion3.jpg">
-			</div>
-			<div  class="pm3 contentGal">
-
-				<img class="img-thumbnail" src="img/sobredimencion2.jpg">
+			<div class="contentGal">
+				<img id="galeryService" class="img-thumbnail" src="img/sobredimencion4.jpg">
 			</div>
 		</article>
 	</div>
@@ -176,7 +166,36 @@
 			<source src="img/ejecutivo.jpg" type="video/jpg">
 					<!-- Actualiza tu navegador -->
 		</video>
-		
+		<form>
+		 	<div class="content-formulario">
+		 			<div>
+			 	 			<h1>Contactanos</h1>
+			 	</div>
+		 	
+			 	<div>
+			 	 		<input type="text" id="txtnombre" placeholder="Apellidos y nombres" class="textos " required="" autofocus="">
+			 	 		<span class="icon-user iconos"></span>
+			 	</div>
+			 	<div>
+			 	 
+			 		<input type="email" id="txtcorreo" placeholder="Correo electronico" class="textos" required="">
+			 		<span class="icon-email iconos"></span>
+
+			 	</div>
+			 	<div>
+			 		<input type="tel" id="txtnumero" placeholder="Celular" class="textos" required="">
+			 		<span class="icon-mobile iconos"></span>
+			 	</div>
+			 	<div>
+			 		
+			 		 <textarea placeholder="Mensaje" cols="45" rows="8" class="textos" name="textarea" id="textarea" required=""></textarea>
+			 		 	<span class="icon-message iconos"></span>
+			 	</div>
+			 	<div>
+			 		<input type="submit" id="btn-envia" value="Enviar">
+			 	</div>	
+		 	</div>
+		 </form>
 	</div>
 	<script  src="js/gamarra1.js" type="text/javascript"></script>
 </body>
