@@ -52,13 +52,13 @@ $(".cabpm a").click(function(e) {
 	function moverImagenes() {
 		if (imgs == 1 ) {
 			imgs=2
-			$("#Inicio").css({ 'background-image': 'url(../img/banner-nuestra-flota1.jpg)'});
+			$("#Inicio").css({ 'background-image': 'url(http://paulorejuela.com/gamarra/public/img/banner-nuestra-flota1.jpg)'});
 		}else if (imgs == 2 ) {
 			imgs=3
-			$("#Inicio").css({ 'background-image': 'url(../img/banner-landing.jpg)'});
+			$("#Inicio").css({ 'background-image': 'url(http://paulorejuela.com/gamarra/public/img/banner-landing.jpg)'});
 		}else if (imgs == 3){
 			imgs=1
-			$("#Inicio").css({ 'background-image': 'url(../img/banner-bienvenidos0.jpg)'});
+			$("#Inicio").css({ 'background-image': 'url(http://paulorejuela.com/gamarra/public/img/banner-bienvenidos0.jpg)'});
 		}
 	}
 
