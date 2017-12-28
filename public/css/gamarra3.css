@@ -84,7 +84,8 @@
 	background-repeat: no-repeat;
 	width: 103.3%;
 	height: 100%;
-	 transition-duration: 3s;
+	transition-duration: 3s;
+	 background-size: 100% 100%;
 }
 
 .header{
@@ -144,10 +145,12 @@
 	left: 30px;
 	top: 55px;
 }
+
 .logo img{
 	width: 100%;
 
 }
+
 .isos{
 	position: absolute;
 	right: 95px;
@@ -176,7 +179,7 @@
 
 #Nosotros{
 	position: absolute;
-	top: 690px;
+	top: 750px;
 	height: 690px;
 	width: 100%;
 }
@@ -187,9 +190,11 @@
  	margin-top: 2.5em;
  	width: 90%;
  }
+ 
  .tab-pane p{
  	text-align: justify;
  }
+
 .contenido-somos-img img{
 	margin-top: 4em;
 	width: 100%;
@@ -197,9 +202,10 @@
   
 #Servicios{
 	position: absolute;
-	top: 1390px;
+	top: 1490px;
 	height: 690px;
 	width: 100%;
+	margin-bottom: 5em;
 }
  
   
@@ -221,12 +227,13 @@
  }
   .divCabImg {
   	margin: auto;
-  	width: 50%;
+  	width: 99%;
   	margin-bottom: 5em;
   }
   .divCabImg ul{
   	list-style: none;
   }
+
  .divCabImg ul li{
  	float: left;
  	padding-left: 1em;
@@ -235,9 +242,9 @@
   	text-decoration: none;
   	font-weight: bold;
   	font-family: "Roboto";
+  	font-size: 14px;
   	border-bottom: 3px solid #39a1cd;
-  	padding: 5px 10px;
-  	width: 500px;
+  	padding: 2px 5px;
   	color: #39a1cd;
   	transition-duration: 2s;
   }
@@ -251,22 +258,25 @@
 .grandContentGal{
 	margin: auto;
 	width: 100%;
+	margin-bottom: 3em;
 }  
 .grandContentGal .contentGal img{
 	display: block;
 	width: 70%;
 	margin:auto;
 	transition-duration: 3s;
+	max-height: 500px;
 }
 
  
 #Contactenos{
 	padding: 0;
 	position: absolute;
-	top: 2090px;
+	top: 2450px;
 	height: 690px;
 	width: 100%;
 }
+
 #Contactenos video {
     position: absolute;
     width: 100%;
@@ -321,3 +331,19 @@
     top: .5em;
     right: .5em;
 }
+
+#Clientes{
+	padding: 0;
+	position: absolute;
+	top: 3250px;
+	height: 690px;
+	width: 100%;
+}
+
+
+#Clientes .imgcliente{
+	text-align: center;
+}
+
+
+ 

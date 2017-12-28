@@ -24,7 +24,7 @@ $(document).ready(function() {
 	 		$("#content-nav").addClass('moviHeader')
 	 	}
 
-		$('html, body').stop().animate({scrollTop: $($(this).attr('href')).offset().top}, 1000);
+		$('html, body').stop().animate({scrollTop: $($(this).attr('href')).offset().top}, 2000);
 	});
 
 $('#myTabs a').click(function (e) {
@@ -43,6 +43,15 @@ $(".cabpm a").click(function(e) {
 	}else if (id=="pm2") {
  		$("#galeryService").attr("src","img/sobredimencion3.jpg");
  		$("#pm2").addClass('activoimg');
+	}else if (id=="pm4") {
+		$("#galeryService").attr("src","img/sobredimencion5.jpg");
+		$("#pm4").addClass('activoimg');
+	}else if (id=="pm5") {
+		$("#galeryService").attr("src","img/sobredimencion6.jpg");
+		$("#pm5").addClass('activoimg');
+	}else if (id=="pm6") {
+		$("#galeryService").attr("src","img/ventas.jpg");
+		$("#pm6").addClass('activoimg');
 	}else{
 		$("#galeryService").attr("src","img/sobredimencion2.jpg");
 		$("#pm3").addClass('activoimg');
