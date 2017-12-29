@@ -5,27 +5,24 @@ $(document).ready(function() {
 	 	e.preventDefault();
 	 	let id = $(this).attr("id");
 	 	if ( id == "_Inicio" || id == "_Contactenos") {
-	 		 $('.menu .link_he').css({
-	 			  	color: '#fff', 
-	 			  });
-	 		 $("#content-nav p").css({
-	 			  	color: '#fff', 
-	 			  });
+	 		 cambiarColor('#fff')
 	 		 $("#content-nav").removeClass('moviHeader')
 
-	 			  
+	 	}else if(id == "_Servicios" ){
+	 		 cambiarColor('#0e67abcc')
+	 		 $("#content-nav").addClass('moviHeader')
 	 	}else{
-	 		$('.menu .link_he').css({
-	 			  	color: '#39a1cd', 
-	 			  });
-	 			  $("#content-nav p").css({
-	 			  	color: '#39a1cd', 
-	 			  });
+	 		cambiarColor('#39a1cd')
 	 		$("#content-nav").addClass('moviHeader')
 	 	}
 
-		$('html, body').stop().animate({scrollTop: $($(this).attr('href')).offset().top}, 2000);
+		$('html, body').stop().animate({scrollTop: $($(this).attr('href')).offset().top}, 1000);
 	});
+
+ function cambiarColor(Color) {
+ 	$('.menu .link_he').css({ color: Color });
+	$("#content-nav p").css({ color: Color });
+ }
 
 $('#myTabs a').click(function (e) {
   e.preventDefault()
@@ -36,25 +33,32 @@ $(".cabpm a").click(function(e) {
 	  e.preventDefault()
 	let id = $(this).attr('id');
 	$(".cabpm a").removeClass('activoimg');
+	$(".contenedo-img-ser .mrn").hide('fast');
 	if (id=="pm1") {
 		
 		$("#pm1").addClass('activoimg');
-		$("#galeryService").attr("src","img/sobredimencion4.jpg");
+		$(".contenedo-img-ser #pm1").show('fast');
 	}else if (id=="pm2") {
- 		$("#galeryService").attr("src","img/sobredimencion3.jpg");
+ 		$(".contenedo-img-ser #pm2").show('fast');
  		$("#pm2").addClass('activoimg');
 	}else if (id=="pm4") {
-		$("#galeryService").attr("src","img/sobredimencion5.jpg");
+		$(".contenedo-img-ser #pm4").show('fast');
 		$("#pm4").addClass('activoimg');
 	}else if (id=="pm5") {
-		$("#galeryService").attr("src","img/sobredimencion6.jpg");
+		$(".contenedo-img-ser #pm5").show('fast');
 		$("#pm5").addClass('activoimg');
 	}else if (id=="pm6") {
-		$("#galeryService").attr("src","img/ventas.jpg");
+		$(".contenedo-img-ser #pm6").show('fast');
 		$("#pm6").addClass('activoimg');
-	}else{
-		$("#galeryService").attr("src","img/sobredimencion2.jpg");
+	}else if (id=="pm3") {
+		$(".contenedo-img-ser #pm3").show('fast');
 		$("#pm3").addClass('activoimg');
+	}else if (id=="pm7") {
+		$(".contenedo-img-ser #pm7").show('fast');
+		$("#pm7").addClass('activoimg');
+	}else if (id=="pm8") {
+		$(".contenedo-img-ser #pm8").show('fast');
+		$("#pm8").addClass('activoimg');
 	}
 });
 
